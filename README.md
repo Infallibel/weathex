@@ -1,16 +1,9 @@
 # weathex
 
-App that gets weather and exchange rates
+App that gets weather and exchange rates. Made as a practice app to strenghten API skills in flutter. 
 
-## Getting Started
+App was made to look similarly to a display of weather and exchange rates (reduced by comissions) in one of the hotels in PL.
 
-This project is a starting point for a Flutter application.
+It fetched the data from accuweather and from NBP and displays it as a slideshow that is fully screened.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The only necessity with displaying the app is to turn off the 'sleep mode' as after that time the screen darkens and it may not be the desired outcome.

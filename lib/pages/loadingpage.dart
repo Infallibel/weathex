@@ -34,11 +34,15 @@ class _LoadingPageState extends State<LoadingPage> {
 
   void _startTimer() {
     DateTime now = DateTime.now();
-    DateTime scheduledTime = DateTime(now.year, now.month, now.day, 1, 0);
+    DateTime scheduledTime = DateTime(now.year, now.month, now.day, 16, 45);
     if (scheduledTime.isBefore(now)) {
       scheduledTime = scheduledTime.add(const Duration(days: 1));
     }
     Duration duration = scheduledTime.difference(now);
+
+    if (duration.inSeconds <= 0) {
+      duration += const Duration(days: 1);
+    }
 
     _timer = Timer.periodic(duration, (Timer timer) {
       _updateData();
@@ -70,6 +74,7 @@ class _LoadingPageState extends State<LoadingPage> {
     );
 
     setState(() {
+      _pages.clear();
       _pages = [weatherPage, weatherPagePL, exchangePage];
     });
   }

@@ -34,7 +34,7 @@ class _LoadingPageState extends State<LoadingPage> {
 
   void _startTimer() {
     DateTime now = DateTime.now();
-    DateTime scheduledTime = DateTime(now.year, now.month, now.day, 16, 45);
+    DateTime scheduledTime = DateTime(now.year, now.month, now.day, 5, 00);
     if (scheduledTime.isBefore(now)) {
       scheduledTime = scheduledTime.add(const Duration(days: 1));
     }

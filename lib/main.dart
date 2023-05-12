@@ -28,5 +28,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-//TODO check if the app updates at 1 am

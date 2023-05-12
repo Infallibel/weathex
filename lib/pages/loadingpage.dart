@@ -60,11 +60,9 @@ class _LoadingPageState extends State<LoadingPage> {
 
     WeatherPage weatherPage = WeatherPage(
       weatherData: weatherData,
-      weatherDataPL: weatherDataPL,
     );
 
     WeatherPage weatherPagePL = WeatherPage(
-      weatherData: weatherData,
       weatherDataPL: weatherDataPL,
       languagePL: true,
     );

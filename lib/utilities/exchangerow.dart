@@ -17,11 +17,11 @@ class ExchangeRow extends StatelessWidget {
       children: [
         Flag.fromString(
           flagCode!,
-          height: 60,
-          width: 90,
+          height: 80,
+          width: 120,
         ),
         SizedBox(
-          width: 120,
+          width: 190,
           child: Text(
             '1 $currency',
             style: kTextStyleExchange,
@@ -42,7 +42,7 @@ class ExchangeRow extends StatelessWidget {
                     '$currencyValue',
                     style: const TextStyle(
                       fontFamily: 'Dongle',
-                      fontSize: 40,
+                      fontSize: 55,
                     ),
                   ),
                 ),

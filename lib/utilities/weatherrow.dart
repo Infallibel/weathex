@@ -26,7 +26,7 @@ class WeatherRow extends StatelessWidget {
         data: ThemeData.light(),
         child: Container(
           decoration: const BoxDecoration(color: Colors.white60),
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 0),
+          padding: const EdgeInsets.only(left: 10),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -54,7 +54,7 @@ class WeatherRow extends StatelessWidget {
                 flex: 8,
                 child: Image.asset(
                   'assets/weatherimages/$weatherImageNumber.png',
-                  scale: 0.8,
+                  scale: 0.65,
                 ),
               ),
               Flexible(
@@ -69,13 +69,13 @@ class WeatherRow extends StatelessWidget {
                         '$temperatureDay°',
                         style: const TextStyle(
                             color: Colors.black,
-                            fontSize: 50,
+                            fontSize: 65,
                             fontFamily: 'DM Sans'),
                       ),
                       Text(
                         '/$temperatureNight°',
                         style: const TextStyle(
-                            color: Colors.black45, fontSize: 20),
+                            color: Colors.black45, fontSize: 25),
                       ),
                     ],
                   ),
@@ -84,11 +84,11 @@ class WeatherRow extends StatelessWidget {
               Flexible(
                 flex: 20,
                 child: SizedBox(
-                  width: 280,
+                  width: 300,
                   child: Text(
                     '$description',
                     style: const TextStyle(
-                        fontSize: 22,
+                        fontSize: 28,
                         color: Colors.black,
                         fontFamily: 'IBM Plex Sans Condensed'),
                   ),

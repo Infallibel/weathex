@@ -1,6 +1,6 @@
 import 'package:weathex/services/networking.dart';
 
-const apiKey = 'PslGVggAyj8wyAiLOYgWDrVyrNaU93ui';
+const apiKey = 'key';
 const accuweatherURL =
     'http://dataservice.accuweather.com/forecasts/v1/daily/5day';
 const krakowKey = '274455';
